@@ -1,8 +1,8 @@
 <!-- Please remove this file from your project -->
 <template>
  <div>
-  <p>{{newMessage}}</p>
-   <div  class="flex  items-center">
+  <p class="text-center py-10">{{newName}}</p>
+   <div  class="flex  justify-center">
      <input type="text" class="w-1/2 bg-gray-100 rounded p-2 mr-4 border focus:outline-none focus:border-blue-500" v-model="name">
 
      <div class="">
@@ -29,10 +29,10 @@ export default {
   },
   computed: {
     ...mapState([
-      "username","message"
+      "userName","userSurname"
     ]),
     ...mapGetters([
-     "newMessage"
+     "newName"
     ]),
   },
   methods:{

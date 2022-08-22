@@ -1,19 +1,19 @@
 
 
  export const state = () =>  ({
-username:'eren',
-message:'hello world'
+userName:'eren',
+userSurname:'gürsoy'
 });
  export const getters = {
-newMessage(state){
-  return state.username +' '+ state.message ;
+   newName(state){
+  return state.userName +' '+ state.userSurname ;
 
 },
  };
  export const mutations ={
    setUsername(state, name)
    {
-     state.username=name
+     state.userName=name
    }
 
  };
